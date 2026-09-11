@@ -1,19 +1,44 @@
 import { useState } from 'react';
 import type { IDataType } from './Type/IType';
+import { toast } from 'react-toastify';
 
 export interface CardProps {
   card: IDataType;
 }
 const Card = ({ card }: CardProps) => {
  const [isSelected,setisSelected]=useState(false)
- const HandleButton=()=>{
-setisSelected(!isSelected)
+const HandleButton = () => {
+  setisSelected(!isSelected);
+  if (!isSelected) {
+    toast.success('Added to Stock !', {
+position: "bottom-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+});
+  } else {
+    toast.info('Remove To Stock!', {
+position: "bottom-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
 
- }
+});;
+  }
+};
+
 
   return (
     <div>
-   <div className=" w-sm rounded-lg shadow-lg  p-6 bg-white">
+   <div className=" rounded-2xl shadow-lg  p-6 bg-white border border-gray-300">
      
       <div className="flex items-center justify-between mb-4">
         <img src={card.icon} alt={card.alt} className="w-12 h-12" />
@@ -29,7 +54,7 @@ setisSelected(!isSelected)
       <p className="text-gray-600 mb-4">{card.description}</p>
 
     
-      <div className="flex flex-wrap justify-between gap-5 mb-4">
+      <div className="flex flex-wrap justify-between gap-5 mb-4 px-4">
         <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">
           {card.category}
         </span>
@@ -46,8 +71,8 @@ setisSelected(!isSelected)
    
 
   
-      <button onClick={HandleButton} className="w-full bg-gray-900 text-white py-2 rounded hover:bg-gray-800">
-       {isSelected?"Selected":"Add To Card"}
+      <button onClick={HandleButton} className={`w-full ${isSelected?"bg-pink-200 text-pink-700": "bg-gray-900 text-white" } py-2 rounded`} disabled={isSelected?true:false}>
+       {isSelected?"✔ Added To Stock":" Added To Stock"}
       </button>
     </div>
     
