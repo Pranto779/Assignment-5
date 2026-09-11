@@ -19,7 +19,7 @@ export const Herosection = () => {
             Explore Technologies
           </button>
 
-          <a href="Learn More">Learn More</a>
+          <a href="Learn More" className='border border-gray-300 py-1.5 px-8 rounded-md'>Learn More</a>
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center ">

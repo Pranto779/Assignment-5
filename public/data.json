@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "hipe": "Popular",
+    "icon": "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
+    "alt": "React logo"
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "description": "A progressive JavaScript framework for building user interfaces and single-page applications.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "hipe": "Popular",
+    "icon": "https://img.icons8.com/?size=100&id=dzfo6UeXW9h7&format=png&color=000000",
+    "alt": "Vue.js logo"
+  },
+  {
+    "id": 3,
+    "name": "Angular",
+    "description": "A powerful TypeScript-based framework for building scalable web applications.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "hipe": "Standard",
+    "icon": "https://img.icons8.com/?size=100&id=6SWtW8hxZWSo&format=png&color=000000",
+    "alt": "Angular logo"
+  },
+  {
+    "id": 4,
+    "name": "Node.js",
+    "description": "A JavaScript runtime built for creating fast and scalable server-side applications.",
+    "category": "Backend",
+    "level": "Beginner-Friendly",
+    "hipe": "Fast",
+    "icon": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000",
+    "alt": "Node.js logo"
+  },
+  {
+    "id": 5,
+    "name": "Express.js",
+    "description": "A minimal and flexible Node.js web framework for building APIs and backend applications.",
+    "category": "Backend",
+    "level": "Beginner-Friendly",
+    "hipe": "Fast",
+    "icon": "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000",
+    "alt": "Express.js logo"
+  },
+  {
+    "id": 6,
+    "name": "MongoDB",
+    "description": "A flexible NoSQL database designed for modern applications and scalable data storage.",
+    "category": "Database",
+    "level": "Beginner-Friendly",
+    "hipe": "Top SQL",
+    "icon": "https://img.icons8.com/?size=100&id=tBBf3P8HL0vR&format=png&color=000000",
+    "alt": "MongoDB logo"
+  },
+  {
+    "id": 7,
+    "name": "TypeScript",
+    "description": "A strongly typed programming language that builds on JavaScript for reliable applications.",
+    "category": "Language",
+    "level": "Intermediate",
+    "hipe": "Standard",
+    "icon": "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000",
+    "alt": "TypeScript logo"
+  },
+  {
+    "id": 8,
+    "name": "Next.js",
+    "description": "A React framework for building fast, full-stack web applications with modern features.",
+    "category": "Framework",
+    "level": "Intermediate",
+    "hipe": "SSR / Edge",
+    "icon": "https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000",
+    "alt": "Next.js logo"
+  },
+  {
+    "id": 9,
+    "name": "Tailwind CSS",
+    "description": "A utility-first CSS framework for quickly building modern and responsive user interfaces.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "hipe": "Popular",
+    "icon": "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
+    "alt": "Tailwind CSS logo"
+  }
+]
