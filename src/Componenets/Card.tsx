@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { useState, type Dispatch, type SetStateAction } from 'react';
 import type { IDataType } from './Type/IType';
 import { toast } from 'react-toastify';
 
 export interface CardProps {
   card: IDataType;
+  select:IDataType[]
+  setSelect:Dispatch<SetStateAction<IDataType[]>>
+  selectcard:IDataType
 }
-const Card = ({ card }: CardProps) => {
+const Card = ({ card , select,setSelect,selectcard}: CardProps) => {
  const [isSelected,setisSelected]=useState(false)
 const HandleButton = () => {
   setisSelected(!isSelected);
+  setSelect([...select,card])
   if (!isSelected) {
     toast.success('Added to Stock !', {
 position: "bottom-right",
@@ -37,7 +41,8 @@ theme: "light",
 
 
   return (
-    <div>
+    
+    <div className='flex justify-between gap-10'>
    <div className=" rounded-2xl shadow-lg  p-6 bg-white border border-gray-300">
      
       <div className="flex items-center justify-between mb-4">
@@ -76,7 +81,11 @@ theme: "light",
       </button>
     </div>
     
-    </div>
+
+ </div>
+   
+   
+   
   );
 };
 
