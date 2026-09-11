@@ -19,13 +19,15 @@ function App() {
 
 
   return (
-    <>
+ <div className="relative">
+     
    <Nav></Nav>
    <Herosection></Herosection>
   <Suspense  fallback={<p className="text-center">Page Loading...</p>}>
      <ParentData data={GetPromise()}></ParentData>
   </Suspense>
-    </>
+ </div>
+   
   )
 }
 

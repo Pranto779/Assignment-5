@@ -9,7 +9,7 @@ const PCard = ({ pcard }: CardProps) => {
     console.log(PCard);
     
     return (
-        <div className="grid grid-cols-1 px-7 md:px-0 mx-auto md:mx-0 md:grid-cols-3 gap-4 w-[1050px] mt-5 ">
+        <div className="grid grid-cols-1 px-7 md:px-0 mx-auto md:mx-0 md:grid-cols-3 gap-4  mt-5 ">
 
             {
                 pcard.map(card=><Card card={card} key={card.id}></Card>)
