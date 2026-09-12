@@ -36,7 +36,7 @@ const PCard = ({ pcard }: CardProps) => {
               : 'Technology Selected'}
           </p>
           {select.length === 0 ? (
-            <div className="text-gray-400 mt-5 text-center border-2 border-dotted border-gray-500 rounded-xl py-4 px-1">
+            <div className="text-gray-400 mt-5 text-center border-2 border-dotted border-gray-500 rounded-md py-4 px-1">
              Your Stack Is Empty
             </div>
           ) : (
@@ -111,7 +111,7 @@ const PCard = ({ pcard }: CardProps) => {
 
 
 
-    <div className=' mt-30 px-5 grid grid-cols-2  py-7'>   {/*pdiv*/}
+    <div className=' mt-30 px-5 grid grid-cols-2  py-7'>  
      <div className='space-y-2'>
 <div>
   <img src={Flogo} alt="" />
