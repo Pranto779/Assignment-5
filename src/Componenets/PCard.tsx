@@ -156,8 +156,8 @@ modern software.</p>
 <div className='mt-20 text-[12px] md:text-normal text-gray-400 py-4 container flex justify-between items-center px-5 md:px-2'>
   <li className='list-none'><a href="">© 2026 Dev Stack. All rights reserved.</a></li>
   <div className='flex justify-between items-center gap-5'>
-    <a href="Privacy"><a href="Privacy">Privacy</a></a>
-    <a href="Terms"><a href="Terms">Terms</a></a>
+    <a href="Privacy">Privacy</a>
+ <a href="Terms">Terms</a>
   </div>
 </div>
 
