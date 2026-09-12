@@ -86,7 +86,7 @@ const PCard = ({ pcard }: CardProps) => {
 
           <div className="mx-auto mt-10">
           <button
-  className=" w-[220px] px-15 py-2 rounded-2xl border border-orange-500 text-orange-600"
+  className={` ${select.length?"block":"hidden"} w-[220px] px-15 py-2 rounded-2xl border border-orange-500 text-orange-600`}
   onClick={() => {
     setSelect([]);
     toast.info(`All Removed From Stock`!, {
