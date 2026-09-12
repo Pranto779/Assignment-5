@@ -13,7 +13,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
   const HandleButton = () => {
     if (!isSelected) {
       setSelect([...select, card]);
-      toast.success('Added to Stock !', {
+      toast.success(`${card.name} Add To Stock`, {
         position: 'bottom-right',
         autoClose: 500,
         hideProgressBar: false,
@@ -25,7 +25,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
       });
     } else {
       setSelect(select.filter((CCard) => CCard.id !== card.id));
-      toast.info('Remove To Stock!', {
+      toast.info(`${card.name} Remove To Stock!`, {
         position: 'bottom-right',
         autoClose: 500,
         hideProgressBar: false,
@@ -46,7 +46,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
         <div className="flex items-center justify-between mb-4">
           <img src={card.icon} alt={card.alt} className="w-12 h-12" />
           <span
-            className={`font-bold ${card.badge === 'Popular' ? 'text-sky-400' : card.badge == 'Standard' ? 'text-green-400' : card.badge === 'Fast' ? 'text-orange-400' : card.badge === 'Top SQL' ? 'text-blue-500' : 'text-red-500'} text-xs px-3 py-1 rounded`}
+            className={`font-bold rounded-2xl ${card.badge === 'Popular' ? 'text-sky-400 bg-sky-200' : card.badge == 'Standard' ? 'text-green-600 bg-green-300' : card.badge === 'Fast' ? 'text-orange-400 bg-orange-200' : card.badge === 'Top SQL' ? 'text-blue-500 bg-blue-200' : 'text-red-500 bg-red-200'} text-xs px-3 py-1 rounded`}
           >
             {card.badge}
           </span>
@@ -57,10 +57,8 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
         <p className="text-gray-600 mb-4">{card.description}</p>
 
         <div className="flex flex-wrap justify-between gap-5 mb-4">
-          <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">
-            {card.category}
-          </span>
-          <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">
+          <span className=" bg-gray-300 text-gray-700 text-xs px-2  rounded-2xl h-7 py-1  ">{card.category}</span>
+          <span className="  text-gray-700 text-xs px-2 py-1  ">
             {card.difficulty}
           </span>
           <div className="flex items-center mb-4">

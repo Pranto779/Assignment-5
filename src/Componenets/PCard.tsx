@@ -67,7 +67,7 @@ const PCard = ({ pcard }: CardProps) => {
                       setSelect(
                         select.filter((card) => card.id !== selectcard.id)
                       );
-                      toast.info('Removed From Stock!', {
+                      toast.info(`${selectcard.name} Removed From Stock!`, {
                         position: 'bottom-right',
                         autoClose: 500,
                         hideProgressBar: false,
@@ -89,7 +89,7 @@ const PCard = ({ pcard }: CardProps) => {
   className="btn px-15 border border-orange-500 text-orange-600"
   onClick={() => {
     setSelect([]);
-    toast.info("Removed From Stock!", {
+    toast.info(`All Removed From Stock`!, {
       position: "bottom-right",
       autoClose: 500,
       hideProgressBar: false,
