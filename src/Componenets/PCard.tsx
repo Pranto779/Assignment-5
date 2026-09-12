@@ -84,9 +84,9 @@ const PCard = ({ pcard }: CardProps) => {
             </div>
           )}
 
-          <div className="mx-auto mt-10 px-2  pl-4">
+          <div className="mx-auto mt-10">
           <button
-  className="btn px-15 border border-orange-500 text-orange-600"
+  className=" w-[220px] px-15 py-2 rounded-2xl border border-orange-500 text-orange-600"
   onClick={() => {
     setSelect([]);
     toast.info(`All Removed From Stock`!, {
