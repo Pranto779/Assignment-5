@@ -4,6 +4,8 @@ import type { IDataType } from './Type/IType';
 import { RxCross2 } from 'react-icons/rx';
 import { toast } from 'react-toastify';
 import Flogo from '../assets/logo-text.png'
+import { LuDot } from 'react-icons/lu';
+import { PiDotOutlineFill } from 'react-icons/pi';
 
 export interface CardProps {
   pcard: IDataType[];
@@ -83,7 +85,7 @@ const PCard = ({ pcard }: CardProps) => {
             </div>
           )}
 
-          <div className="mx-auto mt-10 px-2  pl-3">
+          <div className="mx-auto mt-10 px-2  pl-4">
           <button
   className="btn px-15 border border-orange-500 text-orange-600"
   onClick={() => {
@@ -111,22 +113,24 @@ const PCard = ({ pcard }: CardProps) => {
 
 
 
-    <div className=' mt-30 px-5 grid grid-cols-2  py-7'>  
+    <div className=' mt-30 px-5 grid  grid-cols-1 text-center md:grid-cols-2 md:text-left py-7 md:text-left'>  
      <div className='space-y-2'>
-<div>
+<div className='flex justify-center md:justify-start'>
   <img src={Flogo} alt="" />
   </div>
-<p  className='text-gray-500'>Curated tools, technologies, and resources for developers building <br />
+<p  className='text-gray-500 text-[12px] md:text-[15px] '>Curated tools, technologies, and resources for developers building <br />
 modern software.</p>
-<div className='flex  items-center gap-2 font-semibold text-gray-600'>
+<div className='flex  items-center gap-2 font-semibold text-gray-600 justify-center md:justify-start '>
   <a href="GitHub">GitHub</a>
+<PiDotOutlineFill className='block md:hidden'  />
   <a href="Twitter">Twitter</a>
+<PiDotOutlineFill className='block md:hidden'  />
   <a href="LinkedIn">LinkedIn</a>
 </div>
      </div>
 
 
-     <div className='flex justify-between text-md font-semibold'> 
+     <div className=' md:flex  justify-between text-md font-semibold hidden md:block'> 
       <ul className='space-y-2 text-gray-500   '>
         <li className='font-bold mb-5 text-black'>PRODUCT</li>
         <li>Home</li>
@@ -148,7 +152,7 @@ modern software.</p>
     </div>
 
 
-<div className='mt-20 text-gray-400 py-4 container flex justify-between items-center px-2'>
+<div className='mt-20 text-[12px] md:text-normal text-gray-400 py-4 container flex justify-between items-center px-5 md:px-2'>
   <a  href="">© 2026 Dev Stack. All rights reserved.</a>
   <div className='flex justify-between items-center gap-5'>
     <a href="Privacy">Privacy</a>
