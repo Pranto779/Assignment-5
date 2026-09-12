@@ -133,31 +133,31 @@ modern software.</p>
 
      <div className=' justify-between text-md font-semibold hidden  md:flex '> 
       <ul className='space-y-2 text-gray-500   '>
-        <li className='font-bold mb-5 text-black'>PRODUCT</li>
-        <li>Home</li>
-        <li>Technologies</li>
-        <li>Projects</li>
+        <li className='font-bold mb-5 text-black'><a href="PRODUCT">PRODUCT</a></li>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Technologies">Technologies</a></li>
+        <li><a href="Projects">Projects</a></li>
       </ul>
       <ul className='space-y-2 text-gray-500 '>
-        <li className='font-bold mb-5 text-black'>COMPANY</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Careers</li>
+        <li className='font-bold mb-5 text-black'><a href="COMPANY">COMPANY</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact">Contact</a></li>
+        <li><a href="Careers">Careers</a></li>
       </ul>
       <ul className='space-y-2 text-gray-500  '>
-        <li className='font-bold mb-5 text-black'>LEGAL</li>
-        <li>Privacy Policy</li>
-        <li>Terms of Service</li>
+        <li className='font-bold mb-5 text-black'><a href="LEGAL">LEGAL</a></li>
+        <li><a href="Privacy Policy">Privacy Policy</a></li>
+        <li><a href="Terms of Service">Terms of Service</a></li>
       </ul>
      </div>
     </div>
 
 
 <div className='mt-20 text-[12px] md:text-normal text-gray-400 py-4 container flex justify-between items-center px-5 md:px-2'>
-  <li className='list-none'>© 2026 Dev Stack. All rights reserved.</li>
+  <li className='list-none'><a href="">© 2026 Dev Stack. All rights reserved.</a></li>
   <div className='flex justify-between items-center gap-5'>
-    <a href="Privacy">Privacy</a>
-    <a href="Terms">Terms</a>
+    <a href="Privacy"><a href="Privacy">Privacy</a></a>
+    <a href="Terms"><a href="Terms">Terms</a></a>
   </div>
 </div>
 
