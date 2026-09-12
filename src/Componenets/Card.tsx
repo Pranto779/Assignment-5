@@ -6,17 +6,16 @@ export interface CardProps {
   card: IDataType;
   select: IDataType[];
   setSelect: Dispatch<SetStateAction<IDataType[]>>;
+  isSelected: boolean;
 }
 
-const Card = ({ card, select, setSelect }: CardProps) => {
-  const [isSelected, setisSelected] = useState(false);
+const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
   const HandleButton = () => {
-    setisSelected(!isSelected);
-    setSelect([...select, card]);
     if (!isSelected) {
+      setSelect([...select, card]);
       toast.success('Added to Stock !', {
         position: 'bottom-right',
-        autoClose: 5000,
+        autoClose: 500,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
@@ -25,9 +24,10 @@ const Card = ({ card, select, setSelect }: CardProps) => {
         theme: 'light',
       });
     } else {
+      setSelect(select.filter((CCard) => CCard.id !== card.id));
       toast.info('Remove To Stock!', {
         position: 'bottom-right',
-        autoClose: 5000,
+        autoClose: 500,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
@@ -71,10 +71,10 @@ const Card = ({ card, select, setSelect }: CardProps) => {
 
         <button
           onClick={HandleButton}
-          className={`w-full ${isSelected ? 'bg-pink-200 text-pink-700' : 'bg-gray-900 text-white'} py-2 rounded`}
-          disabled={isSelected ? true : false}
+          className={`w-full ${isSelected ? 'bg-pink-200 text-pink-700' : 'bg-gray-900 text-white'} py-2 rounded` }
+          disabled={isSelected}
         >
-          {isSelected ? '✔Added To Stack' : ' Add To Stack'}
+          {isSelected ? '✔ Added To Stock' : 'Add To Stock'}
         </button>
       </div>
     </div>
