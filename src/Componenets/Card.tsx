@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import type { IDataType } from './Type/IType';
 import { toast } from 'react-toastify';
 
@@ -46,9 +46,9 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
         <div className="flex items-center justify-between mb-4">
           <img src={card.icon} alt={card.alt} className="w-12 h-12" />
           <span
-            className={`font-bold ${card.hipe === 'Popular' ? 'text-sky-400' : card.hipe == 'Standard' ? 'text-green-400' : card.hipe === 'Fast' ? 'text-orange-400' : card.hipe === 'Top SQL' ? 'text-blue-500' : 'text-red-500'} text-xs px-3 py-1 rounded`}
+            className={`font-bold ${card.badge === 'Popular' ? 'text-sky-400' : card.badge == 'Standard' ? 'text-green-400' : card.badge === 'Fast' ? 'text-orange-400' : card.badge === 'Top SQL' ? 'text-blue-500' : 'text-red-500'} text-xs px-3 py-1 rounded`}
           >
-            {card.hipe}
+            {card.badge}
           </span>
         </div>
 
@@ -61,11 +61,11 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
             {card.category}
           </span>
           <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">
-            {card.level}
+            {card.difficulty}
           </span>
           <div className="flex items-center mb-4">
             <span className="text-yellow-500">⭐</span>
-            <span className="ml-1 text-sm font-semibold">4.9</span>
+            <span className="ml-1 text-sm font-semibold">{card.rating}</span>
           </div>
         </div>
 

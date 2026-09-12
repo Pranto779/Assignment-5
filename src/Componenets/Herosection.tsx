@@ -23,7 +23,7 @@ export const Herosection = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center ">
-        <img className="w-[450px]" src={HeroLogo} alt="" />
+        <img className="w-`[450px]`" src={HeroLogo} alt="" />
       </div>
     </div>
   );

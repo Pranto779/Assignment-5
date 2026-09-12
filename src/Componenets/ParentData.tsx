@@ -7,9 +7,7 @@ export interface ParentDataProps {
 }
 
 const ParentData = ({ data }: ParentDataProps) => {
-  console.log(data);
   const info = use(data);
-  console.log(info);
 
   return (
     <div className="container mx-auto ">

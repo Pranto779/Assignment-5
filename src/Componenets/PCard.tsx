@@ -4,7 +4,6 @@ import type { IDataType } from './Type/IType';
 import { RxCross2 } from 'react-icons/rx';
 import { toast } from 'react-toastify';
 import Flogo from '../assets/logo-text.png'
-import { LuDot } from 'react-icons/lu';
 import { PiDotOutlineFill } from 'react-icons/pi';
 
 export interface CardProps {
@@ -38,7 +37,7 @@ const PCard = ({ pcard }: CardProps) => {
               : 'Technology Selected'}
           </p>
           {select.length === 0 ? (
-            <div className="text-gray-400 mt-5 text-center border-2 border-dotted border-gray-500 rounded-md py-4 px-1">
+            <div className="text-gray-400 mt-5 text-center border-1 border-dotted border-gray-500 rounded-md py-4 px-1">
              Your Stack Is Empty
             </div>
           ) : (
@@ -115,7 +114,7 @@ const PCard = ({ pcard }: CardProps) => {
 
 
 
-    <div className=' mt-30 px-5 grid  grid-cols-1 text-center md:grid-cols-2 md:text-left py-7 md:text-left'>  
+    <div className=' mt-30 px-5 grid  grid-cols-1 text-center md:grid-cols-2 md:text-left py-7 '>  
      <div className='space-y-2'>
 <div className='flex justify-center md:justify-start'>
   <img src={Flogo} alt="" />
@@ -132,7 +131,7 @@ modern software.</p>
      </div>
 
 
-     <div className=' md:flex  justify-between text-md font-semibold hidden md:block'> 
+     <div className=' justify-between text-md font-semibold hidden  md:flex '> 
       <ul className='space-y-2 text-gray-500   '>
         <li className='font-bold mb-5 text-black'>PRODUCT</li>
         <li>Home</li>

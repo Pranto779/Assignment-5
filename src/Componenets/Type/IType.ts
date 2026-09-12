@@ -3,8 +3,9 @@ export interface IDataType {
   name: string;
   description: string;
   category: string;
-  level: string;
-  hipe: string;
+  difficulty: string;
+  badge: string;
   icon:string;
   alt:string;
+  rating:number
 }
