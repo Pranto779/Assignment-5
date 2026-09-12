@@ -10,12 +10,12 @@ export const Nav = () => {
         <img src={NavLogo} alt="" />
         <ul className=' hidden  md:flex justify-between gap-10 items-center font-semibold'>
           <li className='text-pink-600'>Home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="Technologies">Technologies</a></li>
+          <li><a href="Projects">Projects</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Contact">Contact</a></li>
         </ul>
-        <div className='flex justify-between items-center font-semibold'>
+        <div className='flex justify-between items-center font-semibold gap-5'>
           <button className="btn ">Sign In</button>
           <button className="btn btn-secondary rounded-3xl">Sign Up</button>
         </div>
