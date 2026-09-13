@@ -5,7 +5,7 @@ export const Herosection = () => {
       <div className="text-center md:text-left md:flex flex-col space-y-5 flex-1">
         <h1 className=" text-4xl md:text-6xl font-bold">
           Build Your Ideal <br />
-          <span className="bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent">
+          <span className="gradient bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>
@@ -15,7 +15,7 @@ export const Herosection = () => {
           your <br /> next project.
         </p>
         <div className=" flex justify-center md:justify-normal items-center gap-7">
-          <button className="bg-gradient-to-r from-orange-500 to-purple-500 px-5 py-2 rounded-lg text-white font-medium">
+          <button className="gradient px-5 py-2 rounded-lg text-white font-medium">
             Explore Technologies
           </button>
 
