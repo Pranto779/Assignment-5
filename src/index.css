@@ -3,3 +3,11 @@
 .gradient {
   background: linear-gradient(to right, #f97316, #9333ea);
 }
+
+.textColor {
+  background: linear-gradient(to right, #f97316, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+

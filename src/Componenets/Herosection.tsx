@@ -3,9 +3,9 @@ export const Herosection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto items-center  ">
       <div className="text-center md:text-left md:flex flex-col space-y-5 flex-1">
-        <h1 className=" text-4xl md:text-6xl font-bold">
+         <h1 className=" text-4xl md:text-6xl font-bold">
           Build Your Ideal <br />
-          <span className="gradient bg-clip-text text-transparent">
+          <span className="textColor">
             Development Stack
           </span>
         </h1>
