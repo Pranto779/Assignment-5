@@ -46,7 +46,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
         <div className="flex items-center justify-between mb-4">
           <img src={card.icon} alt={card.alt} className="w-12 h-12" />
           <span
-            className={`font-bold rounded-2xl ${card.badge === 'Popular' ? 'text-sky-400 bg-sky-200' : card.badge == 'Standard' ? 'text-green-600 bg-green-300' : card.badge === 'Fast' ? 'text-orange-400 bg-orange-200' : card.badge === 'Top SQL' ? 'text-blue-500 bg-blue-200' : 'text-red-500 bg-red-200'} text-xs px-3 py-1 rounded`}
+            className={`font-bold rounded-2xl ${card.badge === 'Popular' ? 'text-sky-400 bg-sky-200' : card.badge == 'Standard' ? 'text-green-600 bg-green-300' : card.badge === 'Fast' ? 'text-orange-400 bg-orange-200' : card.badge === 'Top SQL' ? 'text-blue-500 bg-blue-200' : card.badge==="Essential"?'text-violet-500 bg-violet-200':card.badge==="Containers"?"text-pink-500 bg-pink-200": 'text-red-500 bg-red-200' } text-xs px-3 py-1 rounded`}
           >
             {card.badge}
           </span>
