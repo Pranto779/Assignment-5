@@ -89,7 +89,7 @@ const PCard = ({ pcard }: CardProps) => {
   className={` ${select.length?"block":"hidden"} w-[220px] px-15 py-2 rounded-2xl border border-orange-500 text-orange-600`}
   onClick={() => {
     setSelect([]);
-    toast.info(`All Removed From Stock`!, {
+    toast.error(`All Removed From Stock`!, {
       position: "bottom-right",
       autoClose: 500,
       hideProgressBar: false,

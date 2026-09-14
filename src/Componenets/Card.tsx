@@ -39,7 +39,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
   };
 
   return (
-    <div className="flex justify-between gap-10">
+    <div className="flex justify-between gap-10it ">
       <div
         className={` rounded-2xl shadow-lg  p-6 bg-white border ${isSelected ? 'border-red-500' : 'border-gray-300'} border-gray-300`}
       >
@@ -57,7 +57,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
         <p className="text-gray-600 mb-4">{card.description}</p>
 
         <div className="flex flex-wrap justify-between gap-5 mb-4">
-          <span className=" bg-gray-300 text-gray-700 text-xs px-2  rounded-2xl h-7 py-1  ">{card.category}</span>
+          <span className=" bg-slate-200 text-gray-700 text-xs px-2  rounded-2xl h-7 py-1  ">{card.category}</span>
           <span className="  text-gray-700 text-xs px-2 py-1  ">
             {card.difficulty}
           </span>
@@ -72,7 +72,7 @@ const Card = ({ card, select, setSelect, isSelected }: CardProps) => {
           className={`w-full ${isSelected ? 'bg-pink-200 text-pink-700' : 'bg-gray-900 text-white'} py-2 rounded` }
           disabled={isSelected}
         >
-          {isSelected ? '✔ Added To Stock' : 'Add To Stock'}
+          {isSelected ? '✔ Added To Stack' : 'Add To Stack'}
         </button>
       </div>
     </div>

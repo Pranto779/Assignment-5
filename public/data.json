@@ -136,7 +136,7 @@
     "name": "Kubernetes",
     "category": "DevOps",
     "description": "An open-source platform for automating the deployment, scaling, and management of containerized applications.",
-    "icon": "[https://icon.icepanel.io/Technology/svg/Kubernetes.svg](https://icon.icepanel.io/Technology/svg/Kubernetes.svg)",
+    "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
     "alt": "Kubernetes",
     "rating": 4.7,
     "difficulty": "Advanced",
